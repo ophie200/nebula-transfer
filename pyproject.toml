@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "nebula-transfer"
-version = "0.1.0"
+version = "0.2.1"
 description = "Move Nebula environment variables between two Nebula deployments"
 authors = ["nancy.wong"]
 readme = "README.md"
