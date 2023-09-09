@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "nebula-transfer"
+version = "0.1.0"
+description = "Move Nebula environment variables between two Nebula deployments"
+authors = ["nancy.wong"]
+readme = "README.md"
+repository = "https://github.com/ophie200/nebula-transfer"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+urllib3 = "1.26.6"
+requests = "*"
+sgqlc = "*"
+
+[tool.poetry.scripts]
+transfer_env_vars = "nebula_transfer.transfer_env_vars:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
