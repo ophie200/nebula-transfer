@@ -40,7 +40,7 @@ def get_deployment_id_query(workspace_id, release_name):
 
 def get_env_var_str(env_vars):
     env_var_list = []
-    [env_var_list.append('{key: "' + env_var['key'] + '", value: "' + env_var['value'] + '", isSecret: ' + str(env_var['isSecret']).lower() + '}') for env_var in env_vars]
+    [env_var_list.append('{key: "' + env_var['key'] + '", value: """' + env_var['value'] + '""", isSecret: ' + str(env_var['isSecret']).lower() + '}') for env_var in env_vars]
     env_vars_str = ', '.join(env_var_list)
     
     return env_vars_str
