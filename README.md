@@ -20,7 +20,7 @@ To run, git clone this repo.
 
 cd into the `nebula-transfer` folder and run
 
-`poetry install nebula-migrator`
+`poetry install`
 
 To transfer directly between two Nebula deployments, run
 `poetry run transfer_env_vars`
